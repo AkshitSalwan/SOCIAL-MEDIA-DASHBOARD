@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media Dashboard - Contact Us</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+        }
+
+        section {
+            max-width: 800px;
+            margin: 30px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1, h2 {
+            color: #333;
+        }
+
+        p {
+            color: #555;
+            line-height: 1.6;
+        }
+
+        .contact-form {
+            margin-top: 30px;
+        }
+
+        form {
+            display: grid;
+            gap: 20px;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        .company-info {
+            margin-top: 30px;
+        }
+
+        .map {
+            margin-top: 30px;
+            position: relative;
+            overflow: hidden;
+            padding-top: 75%; /* 4:3 Aspect Ratio */
+        }
+
+        .map iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Social Media Dashboard</h1>
+    </header>
+
+    <section>
+        <h2>Contact Us</h2>
+
+        <div class="contact-form">
+            <form action="#" method="post">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Your Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+
+        <div class="company-info">
+            <h2>Company Information</h2>
+            <p><strong>Address:</strong> 123 Social Media Street, Cityville, State, Zip</p>
+            <p><strong>Email:</strong> info@socialmediadashboard.com</p>
+            <p><strong>Phone:</strong> +1 (555) 123-4567</p>
+        </div>
+
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12345.678901234567!2d-74.005972!3d40.712776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDDCsDQ1JzEzLjYiTiA3NMKwMjEnMTkuOSJX!5e0!3m2!1sen!2sus!4v1559664345441!5m2!1sen!2sus" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Social Media Dashboard. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,95 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>LOGIN PAGE</title>
+    <style>
+        
+        .loginbox{
+    width: 500px;
+    height:500px;
+    color:yellowgreen;
+    background: transparent;
+    background-image: linear-gradient(to right,#075e54,#128c7e,#25d366,#dcf8c6);
+    top:50%;
+    left:50%;
+    position:absolute;
+    transform:translate(-50%,-50%);
+    box-sizing:border-box;
+    padding:70px 30px;
+    border-style:double;
+    border-radius:15%;
+}
+h1{
+    text-align:center;
+    text-decoration: double;
+    color: black;
+    font-size:35px;
+    color:rgb(11, 8, 181);
+}
+.login{
+    color:black;
+    font: 17px;
+    text-align:center;
+    font-family:'Times New Roman', Times, serif;
+
+}
+.submit{
+    text-align:center;
+}
+.checkbox{
+    color:white;
+    font-size:15px;
+    text-align:center;
+}
+body{background-image: url(321.jpg);
+     background-position: linear-gradient((#075e54 25% #128c7e 25% 25d366 25% #dcf8c6 25%));
+     transition: background-position 0.5s , color 0.5s;
+}
+
+        </style>
+</head>
+<script>
+    function validateForm() {
+    var usernameInput = document.getElementById("username").value;
+    var passwordInput = document.getElementById("password").value;
+    if (usernameInput == "T8" && passwordInput == "T8") {
+      alert('login successfully')
+      return true
+    } 
+      else {
+     alert("Invalid username or password. Please try again.");
+     return false
+        }
+        }
+  </script>
+
+<body>
+    
+    <form action="fee project.html" onsubmit="return validateForm()">
+        <div class="loginbox">
+            <h1>LOGIN HERE</h1>
+            <br>
+            <div class="login">
+                USER NAME<input type="text" role="username" id="username"  required>
+
+            </div>
+            <br>
+            <div class="login">
+                PASSWORD <input type="password" id="password" role="password" required>
+            </div> 
+            <br>
+            <div class="checkbox">
+                KEEP ME SIGNED IN <input type="checkbox" role="checkbox">
+            </div>
+            <br>
+            <div class="submit">
+                <button type="submit" onsubmit="">Submit</button>
+                <input type="reset" role="reset">
+            </div>
+        </div>
+    </form>
+</body>
+</html>
